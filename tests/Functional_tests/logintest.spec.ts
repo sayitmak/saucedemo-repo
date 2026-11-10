@@ -12,6 +12,7 @@ test('Valid Login test', async ({page}) => {
 
     //await loginPage.verifyLoginSuccess();
     await expect(page).toHaveTitle('Swag Labs');
+    console.log('Login successful');
 });
 
 
