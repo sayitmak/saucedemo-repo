@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '/Users/sayit/Automation_Projects/Saucedemo_project/test-pages/LoginPage.ts';
+import { LoginPage } from '../../test-pages/LoginPage.ts';
 import loginData from '../../test-data/loginDataNew.json';
 
 
