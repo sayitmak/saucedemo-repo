@@ -62,7 +62,7 @@ test('E2E test for Saucedemo', async ({ page }) => {
     await checkoutInfoPage.zipCodeInput.fill('12345');
     await checkoutInfoPage.continueBtn.click();
 
-    //Step 8: Verify the checkout overview page
+    //Step 8: Verify the checkout overview page and capture the total price
     const checkoutOverviewPage = new CheckoutOverviewPage(page);
     await expect(checkoutOverviewPage.checkoutOverviewPgTitle).toHaveText('Checkout: Overview');
     await expect(checkoutOverviewPage.checkoutList).toHaveCount(itemAdded);
